@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萌宠之家</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">萌宠之家</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-category="all">全部</a></li>
+                <li><a href="#" data-category="cat">猫咪</a></li>
+                <li><a href="#" data-category="dog">狗狗</a></li>
+                <li><a href="#" data-category="bird">鸟类</a></li>
+                <li><a href="#" data-category="fish">鱼类</a></li>
+                <li><a href="#" data-category="rabbit">兔子</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>欢迎来到萌宠之家</h1>
+            <p>在这里找到您的完美伴侣</p>
+        </section>
+
+        <section class="pets-grid" id="petsContainer">
+            <!-- 宠物卡片将通过 JavaScript 动态生成 -->
+        </section>
+
+        <section class="about-us" id="about">
+            <h2>关于我们</h2>
+            <div class="about-content">
+                <p>萌宠之家成立于2024年，致力于为爱宠人士提供优质的宠物信息服务。我们希望通过专业的知识分享，帮助更多人了解和关爱宠物。</p>
+                <p>我们的使命是：</p>
+                <ul>
+                    <li>传播科学的养宠知识</li>
+                    <li>推广文明养宠理念</li>
+                    <li>建立和谐的人宠关系</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 萌宠之家 版权所有</p>
+    </footer>
+
+    <div id="petModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
